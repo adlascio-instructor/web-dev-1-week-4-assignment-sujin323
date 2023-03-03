@@ -4,8 +4,61 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="style.css" />
     <title>Document</title>
   </head>
-  <body></body>
+  <body>
+    <section class="main">
+      <header>
+        <img cleass="logo" src="images/logo.svg" alt="" class="logo" />
+      </header>
+      <form class="loginForm" action="submit" ">
+        <div class="login-header">
+          <img src="images/log-in.svg" alt="" />
+          <span>Login</span>
+          <span>Insert your information below</span>
+        </div>
+  
+        <div class="email input">
+          <span class="email-title input_title">E-mail</span>
+          <div class="email-input input-element">
+            <img src="images/mail.svg" alt="" />
+            <input type="email" placeholder="Type your email" />
+          </div>
+        </div>
+  
+        <div class="pwd input">
+          <span class="pwd-title input_title">Password</span>
+          <div class="pwd-input input-element">
+            <img src="images/lock.svg" alt="" />
+            <input type="password" placeholder="Type your password" />
+            <img src="images/eye.svg" alt="" />
+          </div>
+        </div>
+  
+        <div class="login">
+          <div class="remind">
+            <input type="checkbox" />
+            <span>Remind me</span>
+          </div>
+  
+          <div class="findPwd">
+            <a href="#">Forget my password</a>
+          </div>
+          <div class="login">
+            <input class="login-btn" type="button" value="LOGIN" />
+          </div>
+          <div class="signIn">
+            <span>Don't have an account?</span>
+            <a href="#">Sign up!</a>
+          </div>
+        </div>
+      </form>
+    </section>
+    
+    <section class="side-image">
+      <img class="side-image__image" src="images/side-image.jpg" alt="">
+    </section>
+
+  </body>
 </html>
