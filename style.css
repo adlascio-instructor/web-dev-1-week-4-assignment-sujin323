@@ -1,7 +1,7 @@
 @import url("/css/reset.css");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans");
 @import url("/css/variables.css");
-@import url("/css/loginForm.css");
+@import url("/css/main.css");
 
 body {
     background-color: var(--background);
@@ -9,17 +9,15 @@ body {
     display: grid;
     width: 100vw;
     height:100vh;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: repeat(2, 50%);
+    color: var(--text-base);
 }
-.main {
-    display: grid;
-    margin: 3rem;
-    grid-template-rows: 10% 90%;
-}
+
 .logo {
-    width: 13rem;
+    width: 10rem;
 }
+
 .side-image__image {
-    width:100%;
+    width: 100%;
     height: 100%;
 }

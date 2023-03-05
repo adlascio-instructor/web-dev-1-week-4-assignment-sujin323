@@ -1,0 +1,59 @@
+.main {
+    display: grid;
+    margin: 3rem;
+    grid-template-columns: repeat(8,12.5%);
+    grid-template-rows: 10% repeat(8,11.25%);
+} 
+.loginForm {
+    grid-column: 2 / 8;
+    grid-row: 3 / 8;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--form-background); 
+    padding: 2rem 2rem;
+}
+
+/* login-heade */
+.login-header {
+    grid-area:login-header;
+  display: flex;
+  flex-direction: column;
+}
+.login-header__element {
+    display: flex;
+    align-items: center;
+    margin: 0.5rem;
+
+}
+.login-header__element:first-child{
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--text-title);
+}
+
+.login-header__element img {
+    width: 2rem;
+    height: 2rem;
+    margin-right: 0.6rem;
+}
+
+/* input */
+.email-input{
+    grid-area:email-input;
+}
+.pwd-input {
+    grid-area: pwd-input;
+}
+.input_title {
+    font-weight: 500;
+}
+.input-element {
+    display: flex;
+    border-radius: 5px;
+    padding: 0.4rem;
+    border: 3px solid var(--primary-color);
+}
+.input-element > input {
+    border-style: none;
+    background-color: inherit;
+}
