@@ -1,3 +1,4 @@
+
 .main {
     display: grid;
     margin: 3rem;
@@ -38,22 +39,56 @@
 }
 
 /* input */
-.email-input{
-    grid-area:email-input;
-}
-.pwd-input {
-    grid-area: pwd-input;
-}
-.input_title {
+.input-title {
     font-weight: 500;
 }
 .input-element {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     border-radius: 5px;
-    padding: 0.4rem;
-    border: 3px solid var(--primary-color);
+    margin: 0.5rem 0;
 }
 .input-element > input {
     border-style: none;
+    outline: none;
     background-color: inherit;
+    position: relative;
+    width: 80%;
+    padding: 0.5rem 2rem;
+    border-radius: 5px;
+    border: 3px solid var(--form-background);
+}
+.pwd-input img:first-of-type,
+.email-input img:first-of-type{
+    position: absolute;
+    margin-left: 0.5rem; 
+}
+.pwd-input img:last-of-type {
+    position: absolute;
+    margin-left: 13rem; 
+}
+.input-element input:focus{
+    border: 3px solid var(--primary-color); 
+
+}
+
+
+.remind input[type="checkbox"]:checked {
+    background-color: var(--primary-color);
+    border-color:var(--primary-color);
+    color: white;
+}
+
+/* login */
+.login {
+display: flex;
+flex-direction: column;
+
+}
+.login-btn {
+    width: 80%;
+    background-color: var(--primary-color);
+    padding:0.5rem 0;
+    border-radius: 5px;
 }

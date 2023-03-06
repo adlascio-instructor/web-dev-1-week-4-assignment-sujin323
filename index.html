@@ -21,32 +21,27 @@
         </div>
   
         <div class="email-input">
-          <span class="email-title input_title">E-mail</span>
+          <span class="email-title input-title">E-mail</span>
           <div class="email-input input-element">
             <img src="images/mail.svg" alt="" />
-            <input type="email" placeholder="Type your email" />
+            <input type="email" required placeholder="Type your email" />
           </div>
         </div>
   
         <div class="pwd-input">
-          <span class="pwd-title input_title">Password</span>
+          <span class="pwd-title input-title">Password</span>
           <div class="pwd-input input-element">
             <img src="images/lock.svg" alt="" />
-            <input type="password" placeholder="Type your password" />
+            <input type="password" pattern ="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required  placeholder="Type your password" />
             <img src="images/eye.svg" alt="" />
           </div>
         </div>
   
         <div class="login">
           <div class="remind">
-            <input type="checkbox" />
+            <input type="checkbox"/>
             <span>Remind me</span>
-          </div>
-  
-          <div class="findPwd">
             <a href="#">Forget my password</a>
-          </div>
-          <div class="login">
             <input class="login-btn" type="button" value="LOGIN" />
           </div>
           <div class="signIn">
